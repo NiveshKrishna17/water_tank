@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank Problem Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Water Tank Problem</h1>
+            <p class="subtitle">Enter block heights to see how much water gets trapped!</p>
+        </header>
+
+        <section class="input-section">
+            <label for="heightInput" class="visually-hidden">Block Heights</label>
+            <input type="text" id="heightInput" placeholder="0, 4, 0, 0, 0, 6, 0, 6, 4, 0"
+                aria-label="Enter comma-separated block heights">
+            <button id="calculateBtn">Calculate</button>
+        </section>
+
+        <section class="results-section">
+            <div id="output" class="output-text" aria-live="polite">
+                Total Trapped Water: 0 Units
+            </div>
+
+            <div id="svgContainer" class="svg-wrapper">
+                <!-- SVG visualization will be injected here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
